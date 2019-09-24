@@ -1,0 +1,23 @@
+<html>
+ <head>
+ </head>
+ 
+ <script>
+  time = 600
+  function timer(){
+   if(!time<1){
+   time = time - 1
+   result.innerHTML = "please take print within "+Math.floor(time/60)+":"+time%60
+   }else{
+    window.clearInterval(update);
+    result.innerHTML = "<h1>TimeOut</h1>"
+   }
+  }
+  update = setInterval("timer()",1000)
+ </script>
+ 
+ <body>
+  <div id="result"></div>
+ </body>
+
+ </html>﻿
